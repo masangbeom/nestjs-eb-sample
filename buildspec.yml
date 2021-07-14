@@ -12,6 +12,7 @@ phases:
   post_build:
     commands:
       - mkdir nestjs
+      - mv package-dist.json nestjs/package.json
       - cp -R dist/ node_modules/ nestjs
 artifacts:
   files: nestjs/**/*
