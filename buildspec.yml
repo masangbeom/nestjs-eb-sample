@@ -16,3 +16,4 @@ phases:
       - cp -R dist/ node_modules/ nestjs
 artifacts:
   files: nestjs/**/*
+  base-directory: nestjs
