@@ -17,3 +17,4 @@ phases:
       - cp -R dist/ nestjs
 artifacts:
   files: nestjs/**/*
+  discard-paths: yes
