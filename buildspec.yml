@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+    commands:
+      - npm install
+  build:
+    commands:
+      - npm run build
+  post_build:
+    commands:
+      - mkdir nestjs
+      - cp -R dist/ node_modules/ nestjs
+artifacts:
+  files: nestjs/**/*
